@@ -1,0 +1,129 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-image: url(../img2/fondo\ de\ margaritas.jpg);
+    text-align: center;
+    
+}
+/* grid */
+.contenedor{
+    display: grid;
+    min-height: 100vh;
+
+     grid-template-areas: 
+    "cabeza  "
+    "cuerpo  "
+    "pie  "
+    ;
+}
+header{
+    grid-area: cabeza;
+}
+main{
+    grid-area: cuerpo;
+}
+footer{
+    grid-area: pie;
+}
+.claro{ background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);}
+
+.ima{
+width: 10em;
+   height: 7em;
+ padding-right: 2em;}
+ .desayunos{
+    display: flex;
+    }
+.desayuno1, .desayunos2, .desayuno3, .desayuno4{
+    padding: 10,6em;
+    width: 35em;
+    height: 25em;
+    margin: 1em;
+}
+.desayuno1:hover{
+    transform: scale(1.2);
+     transition: all 2s;
+}
+.desayunos2:hover{
+    
+    transform: scale(1.2);
+     transition: all 2s;
+}
+.desayuno3:hover{
+    transform: scale(1.2);
+     transition: all 2s;
+}
+.desayuno4:hover{
+    transform: scale(1.2);
+     transition: all 2s;
+}
+
+h1{
+font-size: 5em;
+font-family: 'Courier New', Courier, monospace;
+ text-align: center;
+ margin-top: 30px;
+ background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,0.6026785714285714) 50%, rgba(252,176,69,1) 100%);
+}
+.des1,.des2,.des3{
+display: flex;
+flex-direction: row;
+padding: 1em;
+}
+
+.dp1,.dp2,.dp3{
+padding: 1em;
+color: rgb(51, 5, 43);
+font-size: large;
+font-weight: bold;
+background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(154,186,231,1) 77%, rgba(230,157,222,1) 90%, rgba(148,187,233,1) 100%);
+}
+.carousel-control-next, .carousel-control-prev {
+display: none;
+}
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-inner {
+ height: 1000px;
+ width: 1000px;
+ display: flex;
+}
+h2{
+background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,0.6026785714285714) 50%, rgba(252,176,69,1) 100%);
+}
+.desayunos{
+    display: grid;
+    
+}
+
+@media screen and (max-width: 1176px){
+
+    .des1, .des2, .des3 {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .des3 img{
+        height: 200px;
+    }
+}
+@media screen and (max-width: 600px){
+    header nav ul li a{
+        font-size: 25px;
+        margin-top: 5px;
+    }
+
+    .desayuno1, .desayunos2, .desayuno3, .desayuno4{
+        height: 200px;
+        width: 200px;
+    }
+  
+}
