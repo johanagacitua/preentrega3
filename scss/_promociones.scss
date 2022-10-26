@@ -1,0 +1,13 @@
+main {
+    .carousel {
+        img {
+            height: $img*5;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            @include mq-1185px{
+                height: $img*3
+            }
+        }
+    }
+}

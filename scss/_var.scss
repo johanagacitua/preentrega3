@@ -1,0 +1,15 @@
+$img: 100px;
+
+.m{
+    margin: 20px;
+    object-fit: cover;
+    object-position: center;
+    border: solid rgba(0, 0, 0, 0.61) 4px;
+    border-radius: 40px;
+}
+
+@mixin mq-1185px {
+    @media (max-width: 1185px) {
+        @content;
+    }
+}

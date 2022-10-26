@@ -1,0 +1,13 @@
+header{
+    background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
+    .ima{
+        height: $img;
+        margin: 5px 0px;
+        @extend .m;
+        border: 1px solid black;
+
+    }
+
+
+
+}

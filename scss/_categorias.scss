@@ -1,0 +1,19 @@
+main{
+    .categ{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        img{
+            height: $img*5;
+            width: $img*5;
+            @extend .m;
+            @include mq-1185px{
+                height: $img*2;
+            width: $img*2;
+            }
+        }
+       
+
+    }
+}

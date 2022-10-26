@@ -1,0 +1,39 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .desyunos {
+        margin: 20px;
+
+        .imgdes {
+            height: $img*3;
+            width: $img*3;
+            @extend .m;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.15);
+            }
+
+        }
+    }
+
+    .nenita {
+        margin: 20px;
+
+        img {
+            @extend .m
+        }
+
+    }
+
+    .camiontodo {
+        margin: 20px;
+
+        img {
+            height: $img*3
+        }
+
+    }
+}

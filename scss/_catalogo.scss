@@ -1,0 +1,26 @@
+main{
+    .des{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+        img{
+            @extend .m;
+            height: $img*2;
+            width: $img*2;
+            @include mq-1185px{
+                display: none;
+            }
+        }
+        p{
+            width: 75%;
+            background-color: rgba(255, 255, 255, 0.479);
+            padding: 10px;
+            border-radius: 20px;
+            border: solid pink 2px;
+            @include mq-1185px{
+                width: 90%;
+            }
+        }
+    }
+}

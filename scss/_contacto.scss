@@ -1,0 +1,17 @@
+main{
+    form{
+        background-color: pink;
+        padding: 20px;
+        border-radius: 20px;
+        @extend .m;
+         
+        .btn-primar{
+            background-color: rgb(217, 169, 177);
+            border: solid black 1px;
+            border-radius: 5px;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+}
